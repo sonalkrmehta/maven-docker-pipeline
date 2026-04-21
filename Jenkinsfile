@@ -7,12 +7,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Code') {
-            steps {
-                git 'https://github.com/sonalkrmehta/https://github.com/sonalkrmehta/maven-docker-pipeline.git'
-            }
-        }
-
         stage('Build Maven') {
             steps {
                 sh 'mvn clean package'
